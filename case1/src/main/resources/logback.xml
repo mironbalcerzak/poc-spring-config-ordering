@@ -1,0 +1,17 @@
+<configuration>
+
+    <!-- Console Appender -->
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger -->
+    <root level="info">
+        <appender-ref ref="consoleAppender"/>
+    </root>
+
+    <logger name="org.springframework" level="DEBUG"/>
+
+</configuration>
